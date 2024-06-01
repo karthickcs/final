@@ -13,7 +13,9 @@ echo now --->%basename%
 call startdb.bat
 echo now --->%basename% 
 cd %basename%
-START /B CMD /C CALL %basename%\ReadFromDb\ReadFromDb.exe
+cd %basename%\ReadFromDb\
+START /B CMD /C CALL ReadFromDb.exe
+
 TIMEOUT /T 2
 echo now --->%basename% 
 cd %basename%
