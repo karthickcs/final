@@ -137,3 +137,10 @@ CREATE TABLE public.diff_table
     runid integer
 );
 
+ 
+Insert into "public"."usertable" ("username","password","roles") values ('sidd','$2a$10$2aI2lWaRaSgZ3FwY2q3rEeZ4sQsa8e7tjhvp3KkacSAZvqoR4ElAq','admin');
+Insert into "public"."usertable" ("username","password","roles") values ('bodysoda','$2a$10$12dRY2Wp2Bq4TFLpQM7nRes5ZKADK.0w9KeeCtkofWzlCpweYV/cy','admin');
+Insert into "public"."usertable" ("username","password","roles") values ('karthick','$2a$10$oyZnRHqWOd8Pt4in1PU9r.jsiZsHJSlJkIRymZE3i/XtIgYjt.3ja','Batch');
+Insert into "public"."usertable" ("username","password","roles") values ('ragul','$2a$10$NnVCwc3Zw/jPmsvjPH1qCu/3YNFL1F/1XV5grHfqj4i5Utd3oMUtm','large');
+Insert into "public"."usertable" ("username","password","roles") values ('vivek','$2a$10$EcSvCjbOf5VjjI9E9rpe7uXm4fV9GVn4ZkKrEK/fdcayA1YldrlMe','admin');
+Insert into "public"."usertable" ("username","password","roles") values ('james','$2a$10$uhIW/Llr5BCdJ.vWdNJiROO7NPQaWQqzc69WViFqBBVHaBzTClcKS','admin');
