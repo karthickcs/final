@@ -1,0 +1,139 @@
+
+CREATE TABLE public.usertable
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    username character varying(200) COLLATE pg_catalog."default",
+    password character varying(200) COLLATE pg_catalog."default",
+    roles character varying(200) COLLATE pg_catalog."default"
+);
+
+
+CREATE TABLE public.taskmain
+(
+    taskname character varying(1000) COLLATE pg_catalog."default",
+    taskid integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    filelocation character varying(1000) COLLATE pg_catalog."default",
+    status character varying(1000) COLLATE pg_catalog."default",
+    createdby numeric(38,0),
+    shared character varying(1000) COLLATE pg_catalog."default",
+    insertts timestamp(6) without time zone,
+    updatets timestamp(6) without time zone,
+    rowcount integer,
+    filelocation2 character varying(1000) COLLATE pg_catalog."default",
+    jdbcurlsys1 character varying(2000) COLLATE pg_catalog."default",
+    usernamesys1 character varying(2000) COLLATE pg_catalog."default",
+    passwordsys1 character varying(2000) COLLATE pg_catalog."default",
+    dbtypesys1 character varying(2000) COLLATE pg_catalog."default",
+    tablenamesys1 character varying(2000) COLLATE pg_catalog."default",
+    starttssys1 character varying(2000) COLLATE pg_catalog."default",
+    endtssys1 character varying(2000) COLLATE pg_catalog."default",
+    jdbcurlsys2 character varying(2000) COLLATE pg_catalog."default",
+    usernamesys2 character varying(2000) COLLATE pg_catalog."default",
+    passwordsys2 character varying(2000) COLLATE pg_catalog."default",
+    dbtypesys2 character varying(2000) COLLATE pg_catalog."default",
+    tablenamesys2 character varying(2000) COLLATE pg_catalog."default",
+    starttssys2 character varying(2000) COLLATE pg_catalog."default",
+    endtssys2 character varying(2000) COLLATE pg_catalog."default",
+    sys1type character varying(2000) COLLATE pg_catalog."default",
+    sys2type character varying(2000) COLLATE pg_catalog."default",
+    tablenameclobsys1 character varying(2000) COLLATE pg_catalog."default",
+    starttsclobsys1 character varying(2000) COLLATE pg_catalog."default",
+    endtsclobsys1 character varying(2000) COLLATE pg_catalog."default",
+    tablenameclobsys2 character varying(2000) COLLATE pg_catalog."default",
+    starttsclobsys2 character varying(2000) COLLATE pg_catalog."default",
+    endtsclobsys2 character varying(2000) COLLATE pg_catalog."default",
+    tablenameonlinesys1 character varying(2000) COLLATE pg_catalog."default",
+    starttsonlinesys1 character varying(2000) COLLATE pg_catalog."default",
+    endtsonlinesys1 character varying(2000) COLLATE pg_catalog."default",
+    tablenameonlinesys2 character varying(2000) COLLATE pg_catalog."default",
+    starttsonlinesys2 character varying(2000) COLLATE pg_catalog."default",
+    endtsonlinesys2 character varying(2000) COLLATE pg_catalog."default",
+    tablewildcard character varying(2000) COLLATE pg_catalog."default"
+);
+
+
+CREATE TABLE public.rolemaster
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    roles character varying(200) COLLATE pg_catalog."default",
+    tablelist character varying(12000) COLLATE pg_catalog."default"
+);
+
+
+CREATE TABLE public.dp_listen_table
+(
+    taskname character varying(1000) COLLATE pg_catalog."default",
+    taskid integer,
+    filelocation character varying(1000) COLLATE pg_catalog."default",
+    status character varying(1000) COLLATE pg_catalog."default",
+    insertts timestamp(6) without time zone,
+    updatets timestamp(6) without time zone,
+    rowcount integer,
+    runid integer,
+    filelocationt2 character varying(1000) COLLATE pg_catalog."default",
+    dpid integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    jdbcurlsys1 character varying(2000) COLLATE pg_catalog."default",
+    usernamesys1 character varying(2000) COLLATE pg_catalog."default",
+    passwordsys1 character varying(2000) COLLATE pg_catalog."default",
+    dbtypesys1 character varying(2000) COLLATE pg_catalog."default",
+    tablenamesys1 character varying(2000) COLLATE pg_catalog."default",
+    starttssys1 character varying(2000) COLLATE pg_catalog."default",
+    endtssys1 character varying(2000) COLLATE pg_catalog."default",
+    jdbcurlsys2 character varying(2000) COLLATE pg_catalog."default",
+    usernamesys2 character varying(2000) COLLATE pg_catalog."default",
+    passwordsys2 character varying(2000) COLLATE pg_catalog."default",
+    dbtypesys2 character varying(2000) COLLATE pg_catalog."default",
+    tablenamesys2 character varying(2000) COLLATE pg_catalog."default",
+    starttssys2 character varying(2000) COLLATE pg_catalog."default",
+    endtssys2 character varying(2000) COLLATE pg_catalog."default",
+    sys1type character varying(2000) COLLATE pg_catalog."default",
+    sys2type character varying(2000) COLLATE pg_catalog."default",
+    tablenameclobsys1 character varying(2000) COLLATE pg_catalog."default",
+    starttsclobsys1 character varying(2000) COLLATE pg_catalog."default",
+    endtsclobsys1 character varying(2000) COLLATE pg_catalog."default",
+    tablenameclobsys2 character varying(2000) COLLATE pg_catalog."default",
+    starttsclobsys2 character varying(2000) COLLATE pg_catalog."default",
+    endtsclobsys2 character varying(2000) COLLATE pg_catalog."default",
+    tablenameonlinesys1 character varying(2000) COLLATE pg_catalog."default",
+    starttsonlinesys1 character varying(2000) COLLATE pg_catalog."default",
+    endtsonlinesys1 character varying(2000) COLLATE pg_catalog."default",
+    tablenameonlinesys2 character varying(2000) COLLATE pg_catalog."default",
+    starttsonlinesys2 character varying(2000) COLLATE pg_catalog."default",
+    endtsonlinesys2 character varying(2000) COLLATE pg_catalog."default",
+    rowcountsys2 integer,
+    generate_metadata character varying(100) COLLATE pg_catalog."default",
+    rowsprocessed integer,
+    dataloadtime integer,
+    batchtime integer,
+    comparetime integer,
+    reportgentime integer,
+    tablewildcard character varying(2000) COLLATE pg_catalog."default"
+);
+
+
+CREATE TABLE public.diff_table_struct
+(
+    difftabid integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    taskid character varying(100) COLLATE pg_catalog."default",
+    runid character varying(100) COLLATE pg_catalog."default",
+    tname character varying(100) COLLATE pg_catalog."default",
+    tstructoldsys character varying(20000) COLLATE pg_catalog."default",
+    tstructnewsys character varying(20000) COLLATE pg_catalog."default",
+    difference character varying(20000) COLLATE pg_catalog."default"
+);
+
+
+CREATE TABLE public.diff_table
+(
+    taskid character varying(1000) COLLATE pg_catalog."default",
+    insertts timestamp(6) without time zone,
+    maintranid character varying(1000) COLLATE pg_catalog."default",
+    newtranid character varying(1000) COLLATE pg_catalog."default",
+    sequence integer,
+    difference character varying(12000) COLLATE pg_catalog."default",
+    countval integer,
+    threadid character varying(100) COLLATE pg_catalog."default",
+    diffid integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    runid integer
+);
+
