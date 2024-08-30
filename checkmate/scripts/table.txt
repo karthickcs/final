@@ -144,3 +144,9 @@ Insert into "public"."usertable" ("username","password","roles") values ('karthi
 Insert into "public"."usertable" ("username","password","roles") values ('ragul','$2a$10$NnVCwc3Zw/jPmsvjPH1qCu/3YNFL1F/1XV5grHfqj4i5Utd3oMUtm','large');
 Insert into "public"."usertable" ("username","password","roles") values ('vivek','$2a$10$EcSvCjbOf5VjjI9E9rpe7uXm4fV9GVn4ZkKrEK/fdcayA1YldrlMe','admin');
 Insert into "public"."usertable" ("username","password","roles") values ('james','$2a$10$uhIW/Llr5BCdJ.vWdNJiROO7NPQaWQqzc69WViFqBBVHaBzTClcKS','admin');
+
+
+
+Insert into "public"."rolemaster" ("roles","tablelist") values ('admin','ALL');
+Insert into "public"."rolemaster" ("roles","tablelist") values ('large','ALL');
+Insert into "public"."rolemaster" ("roles","tablelist") values ('Batch','ALL');
