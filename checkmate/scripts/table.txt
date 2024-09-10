@@ -136,7 +136,11 @@ CREATE TABLE public.diff_table
     diffid integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
     runid integer
 );
-
+alter table diff_table add oracleTname varchar(200) ;
+  
+  
+  alter table diff_table add tval varchar(200) ;
+  alter table diff_table add ttype varchar(200) ;
  
 Insert into "public"."usertable" ("username","password","roles") values ('sidd','$2a$10$2aI2lWaRaSgZ3FwY2q3rEeZ4sQsa8e7tjhvp3KkacSAZvqoR4ElAq','admin');
 Insert into "public"."usertable" ("username","password","roles") values ('bodysoda','$2a$10$12dRY2Wp2Bq4TFLpQM7nRes5ZKADK.0w9KeeCtkofWzlCpweYV/cy','admin');
