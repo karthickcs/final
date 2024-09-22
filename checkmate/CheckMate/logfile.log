@@ -1,0 +1,109 @@
+[2024-08-19 09:34:09,693:32 -             <module>() ] C:\Users\cskar\Desktop\python\largedarta\CheckMate\dist\CheckMate 
+[2024-08-19 09:34:09,693:35 -             <module>() ] C:\Users\cskar\Desktop\python\largedarta\instantclient_21_14\dist\instantclient_21_14 
+[2024-08-19 09:34:17,821:32 -             <module>() ] C:\Users\cskar\Desktop\python\largedarta\CheckMate\dist\CheckMate 
+[2024-08-19 09:34:17,821:35 -             <module>() ] C:\Users\cskar\Desktop\python\largedarta\instantclient_21_14\dist\instantclient_21_14 
+[2024-08-19 09:36:56,083:32 -             <module>() ] C:\Users\cskar\Documents\GitHub\final\checkmate\CheckMate 
+[2024-08-19 09:36:56,083:35 -             <module>() ] C:\Users\cskar\Documents\GitHub\final\checkmate\instantclient_21_14 
+[2024-08-19 09:37:01,646:455 -             <module>() ] Start --->: 
+[2024-08-19 09:37:01,661:515 -             <module>() ] hi 
+[2024-08-19 09:37:01,661:445 -             readfile() ] exception  
+Traceback (most recent call last):
+  File "CheckMate.py", line 440, in readfile
+FileNotFoundError: [Errno 2] No such file or directory: 'cont.txt'
+[2024-08-19 09:37:05,762:189 -        tableListener() ] exception  
+Traceback (most recent call last):
+  File "CheckMate.py", line 106, in tableListener
+  File "DplistenDao.py", line 132, in getRowForPrpcessing
+  File "CommonDao.py", line 45, in closeConnection
+AttributeError: 'DplistenDao' object has no attribute 'connection'
+[2024-08-19 09:37:05,764:512 -            sleepLoop() ] Listening ....**********-----> 
+[2024-08-19 09:37:44,733:32 -             <module>() ] C:\Users\cskar\Documents\GitHub\final\checkmate\CheckMate 
+[2024-08-19 09:37:44,734:35 -             <module>() ] C:\Users\cskar\Documents\GitHub\final\checkmate\instantclient_21_14 
+[2024-08-19 09:37:44,799:455 -             <module>() ] Start --->: 
+[2024-08-19 09:37:44,817:515 -             <module>() ] hi 
+[2024-08-19 09:37:44,818:445 -             readfile() ] exception  
+Traceback (most recent call last):
+  File "CheckMate.py", line 440, in readfile
+FileNotFoundError: [Errno 2] No such file or directory: 'cont.txt'
+[2024-08-19 09:37:44,905:512 -            sleepLoop() ] Listening ....**********-----> 
+[2024-08-19 09:37:54,951:512 -            sleepLoop() ] Listening ....**********-----> 
+[2024-08-19 09:38:04,980:512 -            sleepLoop() ] Listening ....**********-----> 
+[2024-08-19 09:38:15,021:512 -            sleepLoop() ] Listening ....**********-----> 
+[2024-08-19 09:38:25,051:512 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:44:54,654:32 -             <module>() ] C:\Users\cskar\Documents\GitHub\final\checkmate\CheckMate 
+[2024-09-22 09:44:54,655:35 -             <module>() ] C:\Users\cskar\Documents\GitHub\final\checkmate\instantclient_21_14 
+[2024-09-22 09:45:06,820:469 -             <module>() ] Start --->: 
+[2024-09-22 09:45:06,865:529 -             <module>() ] hi 
+[2024-09-22 09:45:06,865:459 -             readfile() ] exception  
+Traceback (most recent call last):
+  File "CheckMate.py", line 454, in readfile
+FileNotFoundError: [Errno 2] No such file or directory: 'cont.txt'
+[2024-09-22 09:45:10,953:190 -        tableListener() ] exception  
+Traceback (most recent call last):
+  File "CheckMate.py", line 106, in tableListener
+  File "DplistenDao.py", line 132, in getRowForPrpcessing
+  File "CommonDao.py", line 45, in closeConnection
+AttributeError: 'DplistenDao' object has no attribute 'connection'
+[2024-09-22 09:45:10,955:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:49:58,969:32 -             <module>() ] C:\Users\cskar\Documents\GitHub\final\checkmate\CheckMate 
+[2024-09-22 09:49:58,970:35 -             <module>() ] C:\Users\cskar\Documents\GitHub\final\checkmate\instantclient_21_14 
+[2024-09-22 09:49:59,104:469 -             <module>() ] Start --->: 
+[2024-09-22 09:49:59,116:529 -             <module>() ] hi 
+[2024-09-22 09:49:59,116:459 -             readfile() ] exception  
+Traceback (most recent call last):
+  File "CheckMate.py", line 454, in readfile
+FileNotFoundError: [Errno 2] No such file or directory: 'cont.txt'
+[2024-09-22 09:49:59,197:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:50:09,275:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:50:19,342:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:50:29,407:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:50:39,484:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:50:49,550:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:50:59,623:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:51:09,688:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:51:19,782:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:51:29,857:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:51:39,915:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:51:49,975:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:52:00,055:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:52:10,110:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:52:20,176:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:52:30,256:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:52:40,314:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:52:50,383:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:53:00,451:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:53:10,498:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:53:20,562:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:53:30,643:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:53:40,699:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:53:50,819:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:54:00,878:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:54:10,970:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:54:21,046:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:54:31,115:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:54:41,185:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:54:51,257:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:55:01,334:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:55:11,412:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:55:21,475:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:55:31,550:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:55:41,624:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:55:51,699:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:56:01,766:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:56:11,831:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:56:21,908:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:56:31,981:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:56:42,041:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:56:52,133:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:57:02,217:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:57:12,288:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:57:22,351:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:57:32,413:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:57:42,499:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:57:52,573:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:58:02,647:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:58:12,715:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:58:22,776:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:58:32,845:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:58:42,920:526 -            sleepLoop() ] Listening ....**********-----> 
+[2024-09-22 09:58:52,983:526 -            sleepLoop() ] Listening ....**********-----> 
