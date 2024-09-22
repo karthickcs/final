@@ -17,7 +17,7 @@ echo now --->%basename%
 TIMEOUT /T 2
 echo now --->%basename% 
 cd %basename%
-
+start "" "cmd /c startpython.bat"
 
 echo %cd%
 java -jar %basename%\javafiles\cmws.jar
