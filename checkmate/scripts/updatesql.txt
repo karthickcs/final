@@ -1,0 +1,30 @@
+
+CREATE TABLE ignoretable 
+   (	ID INTEGER GENERATED ALWAYS AS IDENTITY , 
+ 
+	Taskid VARCHAR(200 ),
+    tableList VARCHAR(2000 )
+   );
+
+  insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.OVERRIDE');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.RECORD_STATUS');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.CURR_NO');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.INPUTTER');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.DATE_TIME');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.AUTHORISER');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.CO_CODE');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.DEPT_CODE');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.AUDITOR_CODE');
+insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.AUDIT_DATE_TIME');
+
+alter table Taskmain add tablewildcard varchar(2000);
+
+alter table dp_listen_table add tablewildcard varchar(2000);
+
+alter table diff_table add oracleTname varchar(200) ;
+  
+  
+  alter table diff_table add tval varchar(200) ;
+  alter table diff_table add ttype varchar(200) ;
+  
+update diff_table set oracletname=split_part(split_part(maintranid,'|',1),' ',3),tval='TR',ttype='Common' where ttype is null;
