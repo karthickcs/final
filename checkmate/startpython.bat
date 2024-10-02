@@ -1,5 +1,5 @@
 echo %cd%
 set basename=%cd%
-cd %basename%\CheckMate\
-CheckMate.exe
+cd %basename%\ReadFromDb\
+ReadFromDb.exe
 
