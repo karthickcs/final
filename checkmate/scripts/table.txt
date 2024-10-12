@@ -178,5 +178,13 @@ insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.AUDITOR_CODE');
 insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.AUDIT_DATE_TIME');
 
  
-  
+  --******************************************************
+
+alter table Taskmain add tablewildcardallow varchar(200);
+
+
+alter table dp_listen_table add tablewildcardallow varchar(200);
+
+
+update taskmain set tablewildcardallow='LIKE' ;
     
