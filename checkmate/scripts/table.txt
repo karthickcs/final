@@ -187,10 +187,8 @@ alter table dp_listen_table add tablewildcardallow varchar(200);
 
 
 update taskmain set tablewildcardallow='LIKE' ;
-    
 
---***********************************************
 
-create index idx_log_table1 on log_table(tname);
-create index idx_log_table2 on log_table(updatets);
-create index idx_log_table3 on log_table(tname,updatets);
+create index idx_1 on log_table(tname);
+create index idx_2 on log_table(updatets);
+create index idx_1 on log_table(tname,updatets);
