@@ -183,7 +183,7 @@ insert into ignoretable (taskid,tableList ) values( 'ALL','ALL.AUDIT_DATE_TIME')
 alter table Taskmain add tablewildcardallow varchar(200);
 
 
-alter table dp_listen_table add tablewildcardallow varchar(200);
+alter table dp_listen_table add tablewildcardallow varchar(200);  
 
 
 update taskmain set tablewildcardallow='LIKE' ;
@@ -192,3 +192,8 @@ update taskmain set tablewildcardallow='LIKE' ;
 create index idx_1log_table on log_table(tname);
 create index idx_2log_table on log_table(updatets);
 create index idx_3log_table on log_table(tname,updatets);
+create index idx_4log_table on log_table(scnnum,updatets);
+create index idx_5log_table on log_table(scnnum);
+
+
+alter table dp_listen_table add tcounter  integer; 
